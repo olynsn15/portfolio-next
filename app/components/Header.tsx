@@ -17,6 +17,7 @@ const Header = () => {
         </h1>
         <p className='max-w-2xl mx-auto font-ovo'>
             I am a frontend developer from California, USA
+            with 10 years of experience in multiple companies like Microsoft, Tesla, Apple
         </p>
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
             <a href='#contact' className='px-10 py-3 border rounded-full text-white bg-black border-white flex items-center gap-2'>
