@@ -10,8 +10,20 @@
   --color-dark-theme: #11001F;
   --font-outfit: 'Outfit', sans-serif;
   --font-ovo: 'Ovo', sans-serif;
+  --box-shadow-black: 4px 4px 0 0 #000;
+  --box-shadow-white: 4px 4px 0 0 #fff;
 }
 
 .font-ovo {
   font-family: var(--font-ovo); /* Use the CSS variable */
+}
+
+.hover-shadow-black:hover{
+  box-shadow: var(--box-shadow-black);
+  /* You can add other hover styles here as well, like changing color or transform */
+}
+
+.grid-auto-fit {
+  display: grid; /* Make the element a grid container */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
