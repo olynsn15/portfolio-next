@@ -7,7 +7,7 @@ const Footer = () => {
     <div className='mt-20'>
         <div className='text-center'>
             <Image src={assets.logo} alt='logo' className='w-36 mx-auto mb-2 dark:hidden'/>
-            <Image src={assets.logo_dark} alt='logo' className='w-36 mx-auto mb-2'/>
+            <Image src={assets.logo_dark} alt='logo' className='w-36 mx-auto mb-2 hidden'/>
         </div>
         <div className='text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6'>
             <p>© 2025 William Mark. All rights reserved.</p>

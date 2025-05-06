@@ -18,8 +18,19 @@
   font-family: var(--font-ovo); /* Use the CSS variable */
 }
 
-.hover-shadow-black:hover{
+.hover-shadow:hover{
   box-shadow: var(--box-shadow-black);
+  /* You can add other hover styles here as well, like changing color or transform */
+}
+
+@media (prefers-color-scheme: dark) {
+  .hover-shadow:hover {
+    box-shadow: var(--box-shadow-white); /* Box shadow for dark mode */
+  }
+}
+
+.hover-shadow-white:hover{
+  box-shadow: var(--box-shadow-white);
   /* You can add other hover styles here as well, like changing color or transform */
 }
 
