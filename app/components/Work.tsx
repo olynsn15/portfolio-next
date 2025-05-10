@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 const Work = () => {
   return (
-    <motion.div id='work' className='w-full px-[12%] py-10 scroll-mt-20' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}}>
+    <motion.div id='work' className='w-full px-[12%] py-10 scroll-mt-20 items-center' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}}>
         <motion.h4 className='text-center mb-2 text-lg font-ovo' initial={{y: -20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.5, delay: 0.5}}>
             My Portfolio
         </motion.h4>
@@ -17,7 +17,39 @@ const Work = () => {
             my expertise in front-end development.
         </motion.p>
 
-        <motion.div className='grid grid-auto-fit-works my-10 gap-5 dark:text-black' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.9}}>
+        <div className="grid grid-auto-fit-works gap-6 my-10">
+            {workData.map((project, index) => (
+                <div key={index} className="w-full rounded-2xl border border-gray-400 p-6 backdrop-blur-sm bg-transparent transition duration-300 hover:scale-[1.01]">
+                    <div className="relative w-full h-[250px] rounded-3xl overflow-hidden mb-4">
+                        <Image src={project.bgImage} alt={project.title} fill className="object-cover"/>
+                    </div>
+                    <h2 className="text-black text-2xl font-ovo mb-2">{project.title}</h2>
+                    <p className="text-gray-300 text-sm">{project.description}</p>
+                    <div className="flex items-center justify-between mt-7">
+                        <div className='flex items-center'>
+                            {project.icons.map((icon, index) => (
+                                <div key={index} className="border border-gray-400 rounded-full bg-white lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center" style={{transform: `translateX(-${5 * index + 2}px)`,}}>
+                                    <Image src={icon} alt='icons' className='p-2'/>
+                                </div>
+                            ))}
+                        </div>
+                        <a target='_blank' href={project.link}>
+                            Github
+                        </a>
+                    </div>
+                </div>
+            ))}
+        </div>
+
+        <div className='flex justify-center mt-10'>
+            <a href='/sample-resume.pdf' download className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full mx-4 font-ovo text-white dark:border-white/50 bg-black w-fit'>
+                My Other Works
+                <Image src={assets.right_arrow} alt='profile image' className='w-5'/>
+            </a>
+        </div>
+
+
+        {/* <motion.div className='grid grid-auto-fit-works my-10 gap-5 dark:text-black' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.9}}>
             {workData.map((project, index) => (
                 <motion.div whileHover={{scale: 1.05}} transition={{duration: 0.3}} key={index} style={{backgroundImage: `url(${project.bgImage})`}} className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'>
                     <div className='bg-white w-12/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
@@ -31,7 +63,7 @@ const Work = () => {
                     </div>
                 </motion.div>
             ))}
-        </motion.div>
+        </motion.div> */}
     </motion.div>
   )
 }

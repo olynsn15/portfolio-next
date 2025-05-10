@@ -49,6 +49,7 @@ import tailwind from './tailwindcss-original.svg';
 import next from './nextjs-original.svg';
 import swift from './swift-original.svg';
 import mysql from './mysql-original.svg';
+import bg from './bg.png';
 
 export const assets = {
     user_image,
@@ -102,6 +103,7 @@ export const assets = {
     next,
     swift,
     mysql,
+    bg,
 };
 
 export const workData = [
@@ -109,21 +111,29 @@ export const workData = [
         title: 'Frontend project',
         description: 'Web Design',
         bgImage: '/work-1.png',
+        icons: [assets.html, assets.css, assets.js,],
+        link: 'https://github.com/olynsn15/portfolio-next',
     },
     {
         title: 'Geo based app',
         description: 'Mobile App',
         bgImage: '/work-2.png',
+        icons: [assets.html, assets.css, assets.js],
+        link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
     },
     {
         title: 'Photography site',
         description: 'Web Design',
         bgImage: '/work-3.png',
+        icons: [assets.html, assets.css, assets.js],
+        link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
     },
     {
         title: 'UI/UX designing',
         description: 'UI/UX Design',
         bgImage: '/work-4.png',
+        icons: [assets.html, assets.css, assets.js],
+        link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
     },
 ]
 
