@@ -50,10 +50,9 @@ const Navbar = () => {
 
         <div className='flex items-center gap-4'>
             
-            <a href='#contact' className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-ovo dark:border-white/50'>
-                Contact 
-                <Image src={assets.arrow_icon} className='w-3 dark:hidden' alt={'arrow'}/>
-                <Image src={assets.arrow_icon_dark} className='w-3 hidden' alt={'arrow'}/>
+            <a href='/sample-resume.pdf' download className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-ovo dark:border-white/50'>
+                My Resume!
+                <Image src={assets.download_icon} alt='profile image' className='w-3'/>
             </a>
 
             <button className='block md:hidden ml-3' onClick={openMenu}>

@@ -1,4 +1,4 @@
-import { assets, infoList, toolsData } from '@/public/assets/assets'
+import { assets, techStack } from '@/public/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"
@@ -18,28 +18,18 @@ const About = () => {
             </motion.div>
             <motion.div className='flex-1' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.8}}>
                 <p className='mb-10 max-w-2xl font-ovo'>
-                    I am an experienced Frontend Developer with over a decade of professional expertise in the field. 
-                    Throughout my career, I have had the privilege of collaborating with prestigious organizations, 
-                    contributing to their success and growth.
+                    I’m an enthusiastic undergraduate student majoring in Mobile Application and Technology.
+                    My academic journey has shaped me into a collaborative and growth-minded individual, always eager to learn, share, and support others.
+                    Through various learning and community-building experiences, I’ve developed a love for contributing to meaningful projects, mentoring others, and continuously expanding my knowledge in tech and design.
                 </p>
-                <motion.ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.8, delay: 1}}>
-                    {infoList.map(({icon, iconDark, title, description}, index)=>(
-                        <motion.li whileHover={{scale: 1.05}} className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-light-hover hover:-translate-y-1 duration-500 hover-shadow dark:border-white dark:hover-shadow-white dark:hover:bg-dark-hover/50' key={index}>
-                            <Image src={icon} alt={title} className='w-7 mt-3 dark:hidden'/>
-                            <Image src={iconDark} alt={title} className='w-7 mt-3 hidden'/>
-                            <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{title}</h3>
-                            <p className='text-gray-600 text-sm dark:text-white/80'>{description}</p>
-                        </motion.li>
-                    ))}
-                </motion.ul>
 
                 <motion.h4 className='my-6 text-gray-700 font-ovo dark:text-white/80' initial={{y: 20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.5, delay: 1.3}}>
-                    Tools I Use
+                    My Tech Stack
                 </motion.h4>
 
-                <motion.ul className='flex items-center gap-3 sm:gap-5' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 1.5}}>
-                    {toolsData.map((tool, index) => (
-                        <motion.li whileHover={{scale: 1.1}} key={index} className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 hover-shadow-black'>
+                <motion.ul className='flex flex-wrap items-center gap-3 sm:gap-5 max-w-2xl' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 1.5}}>
+                    {techStack.map((tool, index) => (
+                        <motion.li whileHover={{scale: 1.05}} key={index} className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-light-hover hover:-translate-y-1 duration-500 hover-shadow dark:border-white dark:hover-shadow-white dark:hover:bg-dark-hover/50'>
                             <Image src={tool} alt='tools' className='w-5 sm:w-7'/>
                         </motion.li>
                     ))}

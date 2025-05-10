@@ -35,6 +35,20 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-dark.png';
 import right_arrow_bold_dark from './right-arrow-white.png';
+import C from './C.svg';
+import python from './Python.svg';
+import dart from './Dart.svg';
+import flutter from './flutter-original.svg';
+import kotlin from './Kotlin.svg';
+import html from './html5-original.svg';
+import css from './css3-original.svg';
+import js from './javascript-original.svg';
+import react from './react-original.svg';
+import typesecript from './typescript-original.svg';
+import tailwind from './tailwindcss-original.svg';
+import next from './nextjs-original.svg';
+import swift from './swift-original.svg';
+import mysql from './mysql-original.svg';
 
 export const assets = {
     user_image,
@@ -73,7 +87,21 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark, 
+    C,
+    python,
+    dart,
+    flutter, 
+    kotlin,
+    html,
+    css,
+    js,
+    react,
+    typesecript,
+    tailwind,
+    next,
+    swift,
+    mysql,
 };
 
 export const workData = [
@@ -99,19 +127,69 @@ export const workData = [
     },
 ]
 
-export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+export const experienceData = [
+    { 
+        icon: assets.web_icon, 
+        title: 'SASC Senior Mentor', 
+        subtitle: 'SASC BINUS University',
+        description: [
+            "Stepped into a senior mentoring role after two semesters of helping fellow students with their studies.", 
+            "Received a scholarship along the way for the continued contribution."
+        ],
+    },
+    { 
+        icon: assets.mobile_icon, 
+        title: 'Activist of CP : Education', 
+        subtitle: 'TFI Student Community',
+        description: [
+            "Taught Mathematics to 6th graders weekly with the help of bimbel volunteers to support their academic growth.",
+            "Later switched to teaching English to 1st graders, collaborating with fellow volunteers to build early language skills."
+        ],
+    },
+    { 
+        icon: assets.ui_icon, 
+        title: 'Freshmen Partner', 
+        subtitle: 'BINUS University',
+        description: [
+            "Taught Math to 6th graders weekly with the help of bimbel volunteers to support their academic growth.",
+            "Later switched to teaching English to 1st graders, collaborating with fellow volunteers to build early language skills."
+        ],
+    },
+    { 
+        icon: assets.graphics_icon, 
+        title: 'Freshmen Leader', 
+        subtitle: 'BINUS University',
+        description: [
+            "Coordinated with fellow freshmen leaders to guide and support over 60 BINUS 2028 freshmen through academic onboarding and community integration activities during the Orientation & Transition Program."
+        ], 
+    },
+    { 
+        icon: assets.graphics_icon, 
+        title: 'iOS Foundation Cohort 19', 
+        subtitle: 'Apple Developer Academy @BINUS',
+        description: ["Creative design solutions to enhance visual communication..."],
+    },
+    { 
+        icon: assets.graphics_icon, 
+        title: 'Graphic Designer', 
+        subtitle: 'Youths Matter',
+        description: ["Creative design solutions to enhance visual communication..."],
+    },
 ]
 
-export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
-];
-
-export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+export const techStack = [
+    assets.C, 
+    assets.python, 
+    assets.dart, 
+    assets.flutter, 
+    assets.kotlin, 
+    assets.swift, 
+    assets.mysql, 
+    assets.html, 
+    assets.css, 
+    assets.js, 
+    assets.react, 
+    assets.typesecript, 
+    assets.tailwind, 
+    assets.next
 ];

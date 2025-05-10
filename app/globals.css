@@ -34,7 +34,12 @@
   /* You can add other hover styles here as well, like changing color or transform */
 }
 
-.grid-auto-fit {
+.grid-auto-fit-experience {
+  display: grid; /* Make the element a grid container */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-auto-fit-works {
   display: grid; /* Make the element a grid container */
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
