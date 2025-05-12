@@ -49,6 +49,7 @@ import tailwind from './tailwindcss-original.svg';
 import next from './nextjs-original.svg';
 import swift from './swift-original.svg';
 import mysql from './mysql-original.svg';
+import sqlite from './file-type-sqlite.svg'
 import bg from './bg.png';
 import github from './github.svg'
 
@@ -104,40 +105,28 @@ export const assets = {
     next,
     swift,
     mysql,
+    sqlite,
     bg,
     github,
 };
 
-export const workData = [
-    {
-        title: 'AidBuddy',
-        description: 'AidBuddy is a vital mobile app developed using Swift, designed to provide immediate and reliable first aid information in emergency situations. Whether dealing with a minor injury or a critical medical emergency, AidBuddy offers step-by-step guidance to help users respond quickly and effectively before professional assistance arrives.',
-        bgImage: '/work-1.png',
-        icons: [assets.figma, assets.swift],
-        link: 'https://github.com/olynsn15/portfolio-next',
-    },
-    {
-        title: 'TapeSync',
-        description: 'TapeSync is a mobile app built with Flutter that serves as a digital video tape store, allowing customers to browse and purchase tapes, while admins manage tape data. Developed with a Node.js back-end and MySQL database, the app supports CRUD operations, secure JWT-based authentication, and features a responsive UI with data validation for a smooth user experience.',
-        bgImage: '/work-2.png',
-        icons: [assets.dart, assets.flutter, assets.mysql],
-        link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
-    },
-    {
-        title: 'Picverse',
-        description: 'Picverse Community is a dynamic online platform designed to empower digital artists through sharing, connection, and recognition. The website features five primary pages, initially prototyped in Figma and then developed using HTML, CSS, and JavaScript, ensuring a responsive, smooth and engaging user experience across various devices.',
-        bgImage: '/work-3.png',
-        icons: [assets.figma, assets.html, assets.css, assets.js],
-        link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
-    },
-    {
-        title: 'DoJo Movies',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-        icons: [assets.kotlin],
-        link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
-    },
-]
+export const techStack = [
+    assets.C, 
+    assets.python, 
+    assets.dart, 
+    assets.flutter, 
+    assets.kotlin, 
+    assets.swift, 
+    assets.mysql, 
+    assets.sqlite,
+    assets.html, 
+    assets.css, 
+    assets.js, 
+    assets.react, 
+    assets.typesecript, 
+    assets.tailwind, 
+    assets.next
+];
 
 export const experienceData = [
     { 
@@ -194,19 +183,33 @@ export const experienceData = [
     },
 ]
 
-export const techStack = [
-    assets.C, 
-    assets.python, 
-    assets.dart, 
-    assets.flutter, 
-    assets.kotlin, 
-    assets.swift, 
-    assets.mysql, 
-    assets.html, 
-    assets.css, 
-    assets.js, 
-    assets.react, 
-    assets.typesecript, 
-    assets.tailwind, 
-    assets.next
-];
+export const workData = [
+    {
+        title: 'AidBuddy',
+        description: 'AidBuddy is a vital mobile app developed using Swift, designed to provide immediate and reliable first aid information in emergency situations. Whether dealing with a minor injury or a critical medical emergency, AidBuddy offers step-by-step guidance to help users respond quickly and effectively before professional assistance arrives.',
+        bgImage: '/work-1.png',
+        icons: [assets.figma, assets.swift],
+        link: 'https://github.com/olynsn15/portfolio-next',
+    },
+    {
+        title: 'TapeSync',
+        description: 'TapeSync is a mobile app built with Flutter that serves as a digital video tape store, allowing customers to browse and purchase tapes, while admins manage tape data. Developed with a Node.js back-end and MySQL database, the app supports CRUD operations, secure JWT-based authentication, and features a responsive UI with data validation for a smooth user experience.',
+        bgImage: '/work-2.png',
+        icons: [assets.dart, assets.flutter, assets.mysql],
+        link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
+    },
+    {
+        title: 'Picverse',
+        description: 'Picverse Community is a dynamic online platform designed to empower digital artists through sharing, connection, and recognition. The website features five primary pages, initially prototyped in Figma and then developed using HTML, CSS, and JavaScript, ensuring a responsive, smooth and engaging user experience across various devices.',
+        bgImage: '/work-3.png',
+        icons: [assets.figma, assets.html, assets.css, assets.js],
+        link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
+    },
+    {
+        title: 'DoJo Movies',
+        description: 'UI/UX Design',
+        bgImage: '/work-4.png',
+        icons: [assets.kotlin, assets.sqlite],
+        link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
+    },
+]
