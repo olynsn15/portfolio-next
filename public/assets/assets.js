@@ -51,7 +51,9 @@ import swift from './swift-original.svg';
 import mysql from './mysql-original.svg';
 import sqlite from './file-type-sqlite.svg'
 import bg from './bg.png';
-import github from './github.svg'
+import github from './github.svg';
+import binus from './binus.jpeg';
+import sasc from './sasc.jpeg';
 
 export const assets = {
     user_image,
@@ -108,6 +110,8 @@ export const assets = {
     sqlite,
     bg,
     github,
+    binus,
+    sasc,
 };
 
 export const techStack = [
@@ -130,7 +134,7 @@ export const techStack = [
 
 export const experienceData = [
     { 
-        icon: assets.web_icon, 
+        icon: assets.sasc, 
         title: 'SASC Senior Mentor', 
         subtitle: 'SASC BINUS University',
         description: [
@@ -139,7 +143,7 @@ export const experienceData = [
         ],
     },
     { 
-        icon: assets.ui_icon, 
+        icon: assets.binus, 
         title: 'Freshmen Partner', 
         subtitle: 'BINUS University',
         description: [
@@ -147,7 +151,7 @@ export const experienceData = [
         ],
     },
     { 
-        icon: assets.graphics_icon, 
+        icon: assets.binus, 
         title: 'Freshmen Leader', 
         subtitle: 'BINUS University',
         description: [
@@ -207,7 +211,7 @@ export const workData = [
     },
     {
         title: 'DoJo Movies',
-        description: 'UI/UX Design',
+        description: 'DoJo Movie is an Android mobile app that lets users browse and purchase high-quality films while also locating nearby DoJo Movie stores via Google Maps. Built with SQLite for data storage, the app features user authentication, OTP verification, film browsing with data fetched via Volley, and a Google Maps-integrated home page.',
         bgImage: '/work-4.png',
         icons: [assets.kotlin, assets.sqlite],
         link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
