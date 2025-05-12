@@ -50,6 +50,7 @@ import next from './nextjs-original.svg';
 import swift from './swift-original.svg';
 import mysql from './mysql-original.svg';
 import bg from './bg.png';
+import github from './github.svg'
 
 export const assets = {
     user_image,
@@ -104,35 +105,36 @@ export const assets = {
     swift,
     mysql,
     bg,
+    github,
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'AidBuddy',
+        description: 'AidBuddy is a vital mobile app developed using Swift, designed to provide immediate and reliable first aid information in emergency situations. Whether dealing with a minor injury or a critical medical emergency, AidBuddy offers step-by-step guidance to help users respond quickly and effectively before professional assistance arrives.',
         bgImage: '/work-1.png',
-        icons: [assets.html, assets.css, assets.js,],
+        icons: [assets.figma, assets.swift],
         link: 'https://github.com/olynsn15/portfolio-next',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'TapeSync',
+        description: 'TapeSync is a mobile app built with Flutter that serves as a digital video tape store, allowing customers to browse and purchase tapes, while admins manage tape data. Developed with a Node.js back-end and MySQL database, the app supports CRUD operations, secure JWT-based authentication, and features a responsive UI with data validation for a smooth user experience.',
         bgImage: '/work-2.png',
-        icons: [assets.html, assets.css, assets.js],
+        icons: [assets.dart, assets.flutter, assets.mysql],
         link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Picverse',
+        description: 'Picverse Community is a dynamic online platform designed to empower digital artists through sharing, connection, and recognition. The website features five primary pages, initially prototyped in Figma and then developed using HTML, CSS, and JavaScript, ensuring a responsive, smooth and engaging user experience across various devices.',
         bgImage: '/work-3.png',
-        icons: [assets.html, assets.css, assets.js],
+        icons: [assets.figma, assets.html, assets.css, assets.js],
         link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
     },
     {
-        title: 'UI/UX designing',
+        title: 'DoJo Movies',
         description: 'UI/UX Design',
         bgImage: '/work-4.png',
-        icons: [assets.html, assets.css, assets.js],
+        icons: [assets.kotlin],
         link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
     },
 ]
@@ -143,17 +145,8 @@ export const experienceData = [
         title: 'SASC Senior Mentor', 
         subtitle: 'SASC BINUS University',
         description: [
-            "Stepped into a senior mentoring role after two semesters of helping fellow students with their studies.", 
-            "Received a scholarship along the way for the continued contribution."
-        ],
-    },
-    { 
-        icon: assets.mobile_icon, 
-        title: 'Activist of CP : Education', 
-        subtitle: 'TFI Student Community',
-        description: [
-            "Taught Mathematics to 6th graders weekly with the help of bimbel volunteers to support their academic growth.",
-            "Later switched to teaching English to 1st graders, collaborating with fellow volunteers to build early language skills."
+            "Served as Senior Mentor in the SASC Mentor Scholarship program during the even semester of 2024/2025.", 
+            "Provided academic guidance to mentees in various subjects through regular teaching sessions each week."
         ],
     },
     { 
@@ -161,8 +154,7 @@ export const experienceData = [
         title: 'Freshmen Partner', 
         subtitle: 'BINUS University',
         description: [
-            "Taught Math to 6th graders weekly with the help of bimbel volunteers to support their academic growth.",
-            "Later switched to teaching English to 1st graders, collaborating with fellow volunteers to build early language skills."
+            "Guided BINUSIAN 28 freshmen majoring in Artifical Intelligence program at BINUS University by providing continuous support and resources throughout their first-year program."
         ],
     },
     { 
@@ -170,20 +162,35 @@ export const experienceData = [
         title: 'Freshmen Leader', 
         subtitle: 'BINUS University',
         description: [
-            "Coordinated with fellow freshmen leaders to guide and support over 60 BINUS 2028 freshmen through academic onboarding and community integration activities during the Orientation & Transition Program."
+            "Coordinated with fellow freshmen leaders to guide and support over 60 BINUSIAN 28 freshmen through academic onboarding and community integration activities during the Orientation & Transition Program."
         ], 
+    },
+    { 
+        icon: assets.mobile_icon, 
+        title: 'Activist of CP : Education', 
+        subtitle: 'TFI Student Community',
+        description: [
+            "Taught Mathematics to 6th graders and English to 1st graders as part of a year-long community education program.",
+            "Contributed to the planning and execution of various organizational events as a committee member.",
+        ],
     },
     { 
         icon: assets.graphics_icon, 
         title: 'iOS Foundation Cohort 19', 
         subtitle: 'Apple Developer Academy @BINUS',
-        description: ["Creative design solutions to enhance visual communication..."],
+        description: [
+            "Participated in the iOS Foundation Program, a month-long, challenge-driven course designed specifically for undergraduate students.",
+            "Collaborated with a team to design and develop AidBuddy, a first-aid guidance app for outdoor enthusiasts.",
+        ],
     },
     { 
         icon: assets.graphics_icon, 
         title: 'Graphic Designer', 
-        subtitle: 'Youths Matter',
-        description: ["Creative design solutions to enhance visual communication..."],
+        subtitle: 'Youth Matters',
+        description: [
+            "Collaborated with two designers to develop the visual identity of Youth Matters, a youth-led organization.",
+            "Converted written content into visually compelling Instagram posts (@youthmatters.id) to strengthen the organization’s online presence.",
+        ],
     },
 ]
 
