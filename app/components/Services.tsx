@@ -20,7 +20,7 @@ const Services = () => {
           {experienceData.map(({ icon, title, subtitle, description }, index) => (
             <motion.div whileHover={{ scale: 1.05 }} key={index} className='border border-gray-400 rounded-lg px-8 py-12 hover-shadow cursor-pointer hover:bg-light-hover hover:-translate-y-1 duration-500 dark:hover:bg-dark-hover dark:hover:shadow-white'>
               <div className='flex items-center gap-4 mb-5'>
-                <Image src={icon} alt='service icon' className='w-15 h-auto' />
+                <Image src={icon} alt='service icon' className='w-15 h-auto rounded-xl' />
                 <div>
                   <h3 className='text-lg text-gray-700 dark:text-white leading-tight'>{title}</h3>
                   <h3 className='text-sm text-gray-700 dark:text-white'>{subtitle}</h3>

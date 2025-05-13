@@ -1,7 +1,8 @@
-import { assets, techStack } from '@/public/assets/assets'
+import { assets, images, techStack } from '@/public/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"
+import Stack from './Stack'
 
 const About = () => {
   return (
@@ -13,8 +14,14 @@ const About = () => {
             About Me
         </motion.h2>
         <motion.div className='flex flex-col lg:flex-row flex-wrap items-center gap-20 my-10 sm:gap-16' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.8}}>
-            <motion.div className='w-64 sm:w-80 rounded-3xl max-w-none' initial={{opacity: 0, scale: 0.9}} whileInView={{opacity: 1, scale: 1}} transition={{duration: 0.6}}>
-                <Image src={assets.user_image} alt='photo' className='w-full rounded-3xl'/>
+            <motion.div className='w-80 sm:w-115 rounded-3xl max-w-none' initial={{opacity: 0, scale: 0.9}} whileInView={{opacity: 1, scale: 1}} transition={{duration: 0.6}}>
+                <Stack
+                    randomRotation={false}
+                    sensitivity={200}
+                    sendToBackOnClick={false}
+                    cardDimensions={{ width: 200, height: 200 }}
+                    cardsData={images}
+                />
             </motion.div>
             <motion.div className='flex-1' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.8}}>
                 <p className='mb-10 font-ovo text-base sm:text-lg leading-relaxed'>
