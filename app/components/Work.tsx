@@ -36,7 +36,7 @@ const Work = () => {
                         <a target='_blank' href={project.link}>
                             <div className='flex gap-2'>
                                 Github
-                                <Image src={assets.github} alt='github icon' className='w-5 text-pink-500'/>
+                                <Image src={assets.github} alt='github icon'/>
                             </div>
                         </a>
                     </div>

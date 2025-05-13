@@ -2,6 +2,7 @@ import { assets } from '@/public/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion, scale, spring } from "motion/react"
+import BlurText from "./BlurText";
 
 const Header = () => {
   return (
@@ -9,8 +10,14 @@ const Header = () => {
         <motion.div initial={{scale: 0}} whileInView={{scale: 1}} transition={{duration: 0.8, type: 'spring', stiffness: 100}}>
             <Image src={assets.profile_img} alt='profile image' className='rounded-full w-32'/>
         </motion.div>
-        <motion.h1 initial={{y: -30, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.8, delay: 0.5}} className='text-3xl sm:text-6xl lg:text-[66px] font-ovo'>
-            Hi! Olyn here!
+        <motion.h1 initial={{y: -30, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.5, delay: 0.3}}>
+            <BlurText
+                text="Hello there! Olyn here!"
+                delay={500}
+                animateBy="words"
+                direction="top"
+                className='text-3xl sm:text-6xl lg:text-[66px] font-ovo'
+            />
         </motion.h1>
         <motion.h1 initial={{y: -30, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.8, delay: 0.5}} className='text-2xl sm:text-5xl lg:text-[40px] font-ovo'>
             You've found my cozy corner of the web.
