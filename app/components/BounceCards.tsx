@@ -1,9 +1,11 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { assets } from "@/public/assets/assets";
+import { StaticImageData } from "next/image";
 
 interface BounceCardsProps {
   className?: string;
-  images?: string[];
+  images?: StaticImageData[];
   containerWidth?: number;
   containerHeight?: number;
   animationDelay?: number;
@@ -15,7 +17,7 @@ interface BounceCardsProps {
 
 export default function BounceCards({
   className = "",
-  images = [],
+  images = [assets.profile_img, assets.profile_img, assets.profile_img, assets.profile_img],
   containerWidth = 400,
   containerHeight = 600,
   animationDelay = 0.5,
@@ -160,7 +162,7 @@ export default function BounceCards({
         >
           <img
             className="w-full h-full object-cover"
-            src={src}
+            src={src.src}
             alt={`card-${idx}`}
           />
         </div>

@@ -1,21 +1,14 @@
 @import "tailwindcss";
 
-* {
-  font-family: Outfit;
-}
-
 @theme {
   --color-light-hover: #FCF4FF;
   --color-dark-hover: #2A004A;
   --color-dark-theme: #11001F;
-  --font-outfit: 'Outfit', sans-serif;
-  --font-ovo: 'Ovo', sans-serif;
+  --color-purple: #682BD7;
+  --font-lexend-deca: 'Lexend Deca', sans-serif;
+  --font-syne: 'Syne', sans-serif;
   --box-shadow-black: 4px 4px 0 0 #000;
   --box-shadow-white: 4px 4px 0 0 #fff;
-}
-
-.font-ovo {
-  font-family: var(--font-ovo); /* Use the CSS variable */
 }
 
 .hover-shadow:hover{

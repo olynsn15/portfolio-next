@@ -34,11 +34,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? 'bg-white/50 backdrop-blur-lg shadow-sm dark:bg-dark-theme dark:shadow-white/20' : ''}`}>
-        <a href='#top'>
-            <Image src={assets.logo} alt={'logo'} className='w-28 cursor-pointer mr-14 dark:hidden'/>
-            <Image src={assets.logo_dark} alt={'logo'} className='w-28 cursor-pointer mr-14 hidden'/>
-        </a>
+    <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex justify-center z-50 ${isScroll ? 'bg-white/50 backdrop-blur-lg shadow-sm dark:bg-dark-theme dark:shadow-white/20' : ''}`}>
 
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? '' : 'bg-white/50 shadow-sm dark:border dark:border-white/50 dark:bg-transparent'}`}>
             <li><a className='font-ovo' href='#top'>Home</a></li>
@@ -49,11 +45,6 @@ const Navbar = () => {
         </ul>
 
         <div className='flex items-center gap-4'>
-            
-            <a href='/sample-resume.pdf' download className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-ovo dark:border-white/50'>
-                My Resume!
-                <Image src={assets.download_icon} alt='profile image' className='w-3'/>
-            </a>
 
             <button className='block md:hidden ml-3' onClick={openMenu}>
                 <Image src={assets.menu_black} alt='menu icon' className='w-6 dark:hidden'/>

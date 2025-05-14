@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Outfit, Ovo } from "next/font/google";
+import { Lexend_Deca, Syne } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
+const lexend_deca = Lexend_Deca({
   subsets: ["latin"], weight: ["400", "500", "600", "700"]
 });
 
-const ovo = Ovo({
-  subsets: ["latin"], weight: ["400"]
+const syne = Syne({
+  subsets: ["latin"], weight: ["400", "500", "600", "700"]
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio-Olyn",
+  title: "Portfolio",
   description: " ",
 };
 
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden dark:bg-dark-theme dark:text-white`}
+        className={`${lexend_deca.className, syne.className} antialiased leading-8 overflow-x-hidden dark:bg-dark-theme dark:text-white bg-gray-100`}
       >
         {children}
       </body>
