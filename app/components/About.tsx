@@ -1,5 +1,5 @@
 'use client'
-import { assets, techStack } from '@/public/assets/assets'
+import { techStack } from '@/public/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"

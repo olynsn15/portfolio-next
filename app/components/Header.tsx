@@ -2,7 +2,7 @@
 import { assets } from '@/public/assets/assets'
 import Image from 'next/image'
 import React from 'react'
-import { motion, scale, spring } from "motion/react"
+import { motion } from "motion/react"
 
 const Header = () => {
   return (
