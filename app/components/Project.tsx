@@ -6,26 +6,25 @@ import { motion } from "motion/react";
 
 const Project = () => {
   return (
-    <motion.div id='work' className='w-full px-[12%] py-10 scroll-mt-20 items-center' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}}>
+    <motion.div id='work' className='w-full px-[12%] py-15 scroll-mt-20 items-center' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}}>
         <motion.h4 className='text-center mb-2 text-lg font-syne text-purple font-medium' initial={{y: -20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.5, delay: 0.5}}>
-            My Portfolio
+            ✦ My Portfolio ✦
         </motion.h4>
         <motion.h2 className='text-center text-5xl font-syne font-medium' initial={{y: -20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.5, delay: 0.3}}>
-            My latest work
+            Latest Projects
         </motion.h2>
-        <motion.p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.5, delay: 0.7}}>
-            Welcome to my web development portfolio! Explore a collection of projects showcasing
-            my expertise in front-end development.
+        <motion.p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-lexend-deca' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.5, delay: 0.7}}>
+            Explore a collection of projects I did throughout my college years
         </motion.p>
 
         <div className="grid grid-auto-fit-works gap-6 my-10">
             {workData.map((project, index) => (
-                <div key={index} className="w-full rounded-2xl border border-gray-400 p-6 backdrop-blur-sm bg-transparent transition duration-300 hover:scale-[1.01]">
-                    <div className="relative w-full h-[250px] rounded-3xl overflow-hidden mb-4">
+                <div key={index} className="w-full rounded-2xl border border-gray-600 p-6 backdrop-blur-sm bg-transparent transition duration-300 hover:scale-[1.01]">
+                    <div className="relative w-full h-[250px] rounded-2xl overflow-hidden mb-4">
                         <Image src={project.bgImage} alt={project.title} fill className="object-cover"/>
                     </div>
                     <h2 className="text-black text-2xl font-ovo mb-2">{project.title}</h2>
-                    <p className="text-gray-300 text-sm text-justify">{project.description}</p>
+                    <p className="text-gray-600 text-sm text-justify">{project.description}</p>
                     <div className="flex items-center justify-between mt-7">
                         <div className='flex items-center'>
                             {project.icons.map((icon, index) => (

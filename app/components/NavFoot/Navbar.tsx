@@ -39,11 +39,11 @@ const Navbar = () => {
     <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex justify-center z-50 ${isScroll ? 'bg-white/50 backdrop-blur-lg shadow-sm dark:bg-dark-theme dark:shadow-white/20' : ''}`}>
 
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? '' : 'bg-white/50 shadow-sm dark:border dark:border-white/50 dark:bg-transparent'}`}>
-            <li><Link className='font-lexend-deca' href='/'>Home</Link></li>
-            <li><Link className='font-lexend-deca' href='/pages/about'>About</Link></li>
-            <li><Link className='font-lexend-deca' href='/experiences'>Experiences</Link></li>
-            <li><Link className='font-lexend-deca' href='/project'>Projects</Link></li>
-            <li><a className='font-lexend-deca' href='/contact'>Contact Me</a></li>
+            <li><Link className='font-lexend-deca' href='#top'>Home</Link></li>
+            <li><Link className='font-lexend-deca' href='#about'>About</Link></li>
+            <li><Link className='font-lexend-deca' href='#experiences'>Experiences</Link></li>
+            <li><Link className='font-lexend-deca' href='#project'>Projects</Link></li>
+            <li><a className='font-lexend-deca' href='#contact'>Contact Me</a></li>
         </ul>
 
         <div className='flex items-center gap-4'>

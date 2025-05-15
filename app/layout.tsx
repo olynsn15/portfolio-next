@@ -25,13 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${lexend_deca.className, syne.className} antialiased leading-8 overflow-x-hidden dark:bg-dark-theme dark:text-white bg-gray-100`}
+        className={`${lexend_deca.className, syne.className} antialiased leading-8 overflow-x-hidden dark:bg-dark-theme dark:text-white bg-white`}
       >
-        <header className="fixed top-0 z-50">
-          <Navbar />
-        </header>
-        <main className="pt-15">{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );

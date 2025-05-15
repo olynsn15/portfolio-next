@@ -54,6 +54,8 @@ import bg from './bg.png';
 import github from './github.svg';
 import binus from './binus.jpeg';
 import sasc from './sasc.jpeg';
+import tfisc from './tfisc.png';
+import ada from './ada.jpeg'
 
 export const assets = {
     user_image,
@@ -112,6 +114,8 @@ export const assets = {
     github,
     binus,
     sasc,
+    tfisc,
+    ada,
 };
 
 export const techStack = [
@@ -137,53 +141,31 @@ export const experienceData = [
         icon: assets.sasc, 
         title: 'SASC Senior Mentor', 
         subtitle: 'SASC BINUS University',
-        description: [
-            "Served as Senior Mentor in the SASC Mentor Scholarship program during the even semester of 2024/2025.", 
-            "Provided academic guidance to mentees in various subjects through regular teaching sessions each week."
-        ],
     },
     { 
         icon: assets.binus, 
         title: 'Freshmen Partner', 
         subtitle: 'BINUS University',
-        description: [
-            "Guided BINUSIAN 28 freshmen majoring in Artifical Intelligence program at BINUS University by providing continuous support and resources throughout their first-year program."
-        ],
     },
     { 
         icon: assets.binus, 
         title: 'Freshmen Leader', 
         subtitle: 'BINUS University',
-        description: [
-            "Coordinated with fellow freshmen leaders to guide and support over 60 BINUSIAN 28 freshmen through academic onboarding and community integration activities during the Orientation & Transition Program."
-        ], 
     },
     { 
-        icon: assets.mobile_icon, 
+        icon: assets.tfisc, 
         title: 'Activist of CP : Education', 
         subtitle: 'TFI Student Community',
-        description: [
-            "Taught Mathematics to 6th graders and English to 1st graders as part of a year-long community education program.",
-            "Contributed to the planning and execution of various organizational events as a committee member.",
-        ],
     },
     { 
-        icon: assets.graphics_icon, 
+        icon: assets.ada, 
         title: 'iOS Foundation Cohort 19', 
         subtitle: 'Apple Developer Academy @BINUS',
-        description: [
-            "Participated in the iOS Foundation Program, a month-long, challenge-driven course designed specifically for undergraduate students.",
-            "Collaborated with a team to design and develop AidBuddy, a first-aid guidance app for outdoor enthusiasts.",
-        ],
     },
     { 
         icon: assets.graphics_icon, 
         title: 'Graphic Designer', 
         subtitle: 'Youth Matters',
-        description: [
-            "Collaborated with two designers to develop the visual identity of Youth Matters, a youth-led organization.",
-            "Converted written content into visually compelling Instagram posts (@youthmatters.id) to strengthen the organization’s online presence.",
-        ],
     },
 ]
 
