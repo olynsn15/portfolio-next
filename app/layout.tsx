@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Lexend_Deca, Syne } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/NavFoot/Navbar";
-import Footer from "./components/NavFoot/Footer";
 
 const lexend_deca = Lexend_Deca({
   subsets: ["latin"], weight: ["400", "500", "600", "700"]
