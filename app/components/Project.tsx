@@ -24,7 +24,7 @@ const Project = () => {
                         <Image src={project.bgImage} alt={project.title} fill className="object-cover"/>
                     </div>
                     <h2 className="text-black text-2xl font-ovo mb-2">{project.title}</h2>
-                    {/* <p className="text-gray-600 text-sm text-justify">{project.description}</p> */}
+                    <p className="text-gray-600 text-sm text-justify">{project.description}</p>
                     <div className="flex items-center justify-between mt-7">
                         <div className='flex items-center'>
                             {project.icons.map((icon, index) => (

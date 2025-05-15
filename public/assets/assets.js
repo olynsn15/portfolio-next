@@ -172,28 +172,28 @@ export const experienceData = [
 export const workData = [
     {
         title: 'AidBuddy',
-        // description: 'AidBuddy is a vital mobile app developed using Swift, designed to provide immediate and reliable first aid information in emergency situations. Whether dealing with a minor injury or a critical medical emergency, AidBuddy offers step-by-step guidance to help users respond quickly and effectively before professional assistance arrives.',
+        description: 'AidBuddy is a vital mobile app developed using Swift, designed to provide immediate and reliable first aid information in emergency situations. Whether dealing with a minor injury or a critical medical emergency, AidBuddy offers step-by-step guidance to help users respond quickly and effectively before professional assistance arrives.',
         bgImage: '/work-1.png',
         icons: [assets.figma, assets.swift],
         link: 'https://github.com/olynsn15/portfolio-next',
     },
     {
         title: 'TapeSync',
-        // description: 'TapeSync is a mobile app built with Flutter that serves as a digital video tape store, allowing customers to browse and purchase tapes, while admins manage tape data. Developed with a Node.js back-end and MySQL database, the app supports CRUD operations, secure JWT-based authentication, and features a responsive UI with data validation for a smooth user experience.',
+        description: 'TapeSync is a mobile app built with Flutter that serves as a digital video tape store, allowing customers to browse and purchase tapes, while admins manage tape data. Developed with a Node.js back-end and MySQL database, the app supports CRUD operations, secure JWT-based authentication, and features a responsive UI with data validation for a smooth user experience.',
         bgImage: '/work-2.png',
         icons: [assets.dart, assets.flutter, assets.mysql],
         link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
     },
     {
         title: 'Picverse',
-        // description: 'Picverse Community is a dynamic online platform designed to empower digital artists through sharing, connection, and recognition. The website features five primary pages, initially prototyped in Figma and then developed using HTML, CSS, and JavaScript, ensuring a responsive, smooth and engaging user experience across various devices.',
+        description: 'Picverse Community is a dynamic online platform designed to empower digital artists through sharing, connection, and recognition. The website features five primary pages, initially prototyped in Figma and then developed using HTML, CSS, and JavaScript, ensuring a responsive, smooth and engaging user experience across various devices.',
         bgImage: '/work-3.png',
         icons: [assets.figma, assets.html, assets.css, assets.js],
         link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
     },
     {
         title: 'DoJo Movies',
-        // description: 'DoJo Movie is an Android mobile app that lets users browse and purchase high-quality films while also locating nearby DoJo Movie stores via Google Maps. Built with SQLite for data storage, the app features user authentication, OTP verification, film browsing with data fetched via Volley, and a Google Maps-integrated home page.',
+        description: 'DoJo Movie is an Android mobile app that lets users browse and purchase high-quality films while also locating nearby DoJo Movie stores via Google Maps. Built with SQLite for data storage, the app features user authentication, OTP verification, film browsing with data fetched via Volley, and a Google Maps-integrated home page.',
         bgImage: '/work-4.png',
         icons: [assets.kotlin, assets.sqlite],
         link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
