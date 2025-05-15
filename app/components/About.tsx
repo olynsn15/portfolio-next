@@ -1,8 +1,9 @@
+'use client'
 import { assets, techStack } from '@/public/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"
-import BounceCards from './BounceCards'
+import BounceCards from './UI/BounceCards'
 
 const About = () => {
 

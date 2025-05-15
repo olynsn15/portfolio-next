@@ -1,11 +1,12 @@
+'use client'
 import { experienceData } from '@/public/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react";
 
-const Services = () => {
+const Experiences = () => {
   return (
-    <motion.div id='services' className='w-full px-[12%] py-10 scroll-mt-20' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}}>
+    <motion.div id='experiences' className='w-full px-[12%] py-10 scroll-mt-20' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}}>
         <motion.h4 className='text-center mb-2 text-lg font-syne text-purple font-medium' initial={{y: -20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.5, delay: 0.5}}>
             Experiences
         </motion.h4>
@@ -33,4 +34,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Experiences

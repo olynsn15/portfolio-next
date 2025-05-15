@@ -1,5 +1,7 @@
+"use client"
 import { assets } from '@/public/assets/assets'
 import Image from 'next/image'
+import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react'
 
 const Navbar = () => {
@@ -37,11 +39,11 @@ const Navbar = () => {
     <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex justify-center z-50 ${isScroll ? 'bg-white/50 backdrop-blur-lg shadow-sm dark:bg-dark-theme dark:shadow-white/20' : ''}`}>
 
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? '' : 'bg-white/50 shadow-sm dark:border dark:border-white/50 dark:bg-transparent'}`}>
-            <li><a className='font-ovo' href='#top'>Home</a></li>
-            <li><a className='font-ovo' href='#about'>About</a></li>
-            <li><a className='font-ovo' href='#services'>Services</a></li>
-            <li><a className='font-ovo'href='#work'>My Work</a></li>
-            <li><a className='font-ovo' href='#contact'>Contact Me</a></li>
+            <li><Link className='font-lexend-deca' href='/'>Home</Link></li>
+            <li><Link className='font-lexend-deca' href='/pages/about'>About</Link></li>
+            <li><Link className='font-lexend-deca' href='/experiences'>Experiences</Link></li>
+            <li><Link className='font-lexend-deca' href='/project'>Projects</Link></li>
+            <li><a className='font-lexend-deca' href='/contact'>Contact Me</a></li>
         </ul>
 
         <div className='flex items-center gap-4'>
@@ -58,8 +60,8 @@ const Navbar = () => {
                 <Image src={assets.close_black} alt='close icon' className='w-5 cursor-pointer dark:hidden'/>
                 <Image src={assets.close_white} alt='close icon' className='w-5 cursor-pointer'/>
             </div>
-            <li><a className='font-ovo' onClick={closeMenu} href='#top'>Home</a></li>
-            <li><a className='font-ovo' onClick={closeMenu} href='#about'>About</a></li>
+            <li><Link className='font-lexend-deca' href='/'>Home</Link></li>
+            <li><Link className='font-lexend-deca' href='/about'>About</Link></li>
             <li><a className='font-ovo' onClick={closeMenu} href='#services'>Services</a></li>
             <li><a className='font-ovo' onClick={closeMenu} href='#work'>My Work</a></li>
             <li><a className='font-ovo' onClick={closeMenu} href='#contact'>Contact Me</a></li>
