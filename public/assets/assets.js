@@ -56,6 +56,7 @@ import binus from './binus.jpeg';
 import sasc from './sasc.jpeg';
 import tfisc from './tfisc.png';
 import ada from './ada.jpeg'
+import youthmatters from './youthmatters.png'
 
 export const assets = {
     user_image,
@@ -116,6 +117,7 @@ export const assets = {
     sasc,
     tfisc,
     ada,
+    youthmatters,
 };
 
 export const techStack = [
@@ -163,7 +165,7 @@ export const experienceData = [
         subtitle: 'Apple Developer Academy @BINUS',
     },
     { 
-        icon: assets.graphics_icon, 
+        icon: assets.youthmatters, 
         title: 'Graphic Designer', 
         subtitle: 'Youth Matters',
     },
@@ -175,7 +177,7 @@ export const workData = [
         description: 'AidBuddy is a vital mobile app developed using Swift, designed to provide immediate and reliable first aid information in emergency situations. Whether dealing with a minor injury or a critical medical emergency, AidBuddy offers step-by-step guidance to help users respond quickly and effectively before professional assistance arrives.',
         bgImage: '/work-1.png',
         icons: [assets.figma, assets.swift],
-        link: 'https://github.com/olynsn15/portfolio-next',
+        link: 'https://github.com/olynsn15/AidBuddy',
     },
     {
         title: 'TapeSync',
@@ -189,7 +191,7 @@ export const workData = [
         description: 'Picverse Community is a dynamic online platform designed to empower digital artists through sharing, connection, and recognition. The website features five primary pages, initially prototyped in Figma and then developed using HTML, CSS, and JavaScript, ensuring a responsive, smooth and engaging user experience across various devices.',
         bgImage: '/work-3.png',
         icons: [assets.figma, assets.html, assets.css, assets.js],
-        link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
+        link: 'https://github.com/olynsn15/Picverse',
     },
     {
         title: 'DoJo Movies',

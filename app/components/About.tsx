@@ -1,33 +1,51 @@
 'use client'
 import { techStack } from '@/public/assets/assets'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from "motion/react"
 import BounceCards from './UI/BounceCards'
 
 const About = () => {
 
     const transformStyles = [
-        "rotate(5deg) translate(-200px)",
-        "rotate(0deg) translate(-100px)",
-        "rotate(-5deg)",
-        "rotate(5deg) translate(120px)",
-        "rotate(-5deg) translate(150px)"
-    ];
+        "rotate(5deg) translate(-170px)",
+        "rotate(-5deg) translate(-60px)",
+        "rotate(7deg) translate(50px)",
+        "rotate(-4deg) translate(170px)"
+    ];  
+
+    const [containerWidth, setContainerWidth] = useState(500);
+
+    useEffect(() => {
+        const handleResize = () => {
+        const width = window.innerWidth;
+        if (width < 640) {
+            setContainerWidth(300); // small screen
+        } else if (width < 1024) {
+            setContainerWidth(400); // medium screen
+        } else {
+            setContainerWidth(500); // large screen
+        }
+        };
+
+        handleResize(); // Set initial width
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
     
   return (
-    <motion.div id='about' className='w-full px-[12%] py-15 scroll-mt-20' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}}>
+    <motion.div id='about' className='w-full px-[10%] py-15 scroll-mt-20' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}}>
         <motion.h4 className='text-center mb-2 text-lg font-syne text-purple font-medium' initial={{opacity: 0, y: -20}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.3}}>
             ✦ Introduction ✦
         </motion.h4>
         <motion.h2 className='text-center text-5xl font-syne font-medium' initial={{opacity: 0, y: -20}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.5}}>
             About Me
         </motion.h2>
-        <motion.div className='flex flex-col lg:flex-row flex-wrap items-center gap-10 my-10 sm:gap-20' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.8}}>
-            <motion.div className='w-100 sm:w-120 rounded-3xl max-w-none' initial={{opacity: 0, scale: 0.9}} whileInView={{opacity: 1, scale: 1}} transition={{duration: 0.6}}>
+        <motion.div className='flex flex-col lg:flex-row flex-wrap items-center my-12 lg:gap-30 sm:gap-20' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.8}}>
+            <motion.div initial={{opacity: 0, scale: 0.9}} whileInView={{opacity: 1, scale: 1}} transition={{duration: 0.6}}>
                 <BounceCards
                     className="custom-bounceCards"
-                    containerWidth={500}
+                    containerWidth={containerWidth}
                     containerHeight={250}
                     animationDelay={1}
                     animationStagger={0.08}

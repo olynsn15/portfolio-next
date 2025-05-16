@@ -25,11 +25,10 @@ export default function BounceCards({
   animationStagger = 0.06,
   easeType = "elastic.out(1, 0.8)",
   transformStyles = [
-    "rotate(10deg) translate(-170px)",
-    "rotate(5deg) translate(-85px)",
-    "rotate(-3deg)",
-    "rotate(-10deg) translate(85px)",
-    "rotate(2deg) translate(170px)",
+    "rotate(7deg) translateX(-160px)",  // Adjusted for 4 cards
+    "rotate(3deg) translateX(-50px)",   // Adjusted for 4 cards
+    "rotate(-3deg) translateX(50px)",  // Adjusted for 4 cards
+    "rotate(-7deg) translateX(160px)", // Adjusted for 4 cards
   ],
   enableHover = false,
 }: BounceCardsProps) {
@@ -153,7 +152,7 @@ export default function BounceCards({
       {images.map((src, idx) => (
         <div
           key={idx}
-          className={`card card-${idx} absolute w-[200px] h-[300px] aspect-square border-8 border-white rounded-[30px] overflow-hidden`}
+          className={`card card-${idx} absolute w-[50%] aspect-[3/4] border-8 border-white rounded-[30px] overflow-hidden`}
           style={{
             boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
             transform: transformStyles[idx] || "none",

@@ -17,7 +17,7 @@ const Project = () => {
             Explore a collection of projects I did throughout my college years
         </motion.p>
 
-        <div className="grid grid-auto-fit-works gap-6 my-10">
+        <div className="grid grid-auto-fit-works gap-6 my-10 items-center justify-center">
             {workData.map((project, index) => (
                 <div key={index} className="w-full rounded-2xl border border-gray-600 p-6 backdrop-blur-sm bg-transparent transition duration-300 hover:scale-[1.01]">
                     <div className="relative w-full h-[250px] rounded-2xl overflow-hidden mb-4">
@@ -45,7 +45,7 @@ const Project = () => {
         </div>
 
         <div className='flex justify-center mt-10'>
-            <a href='/sample-resume.pdf' download className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full mx-4 font-ovo text-white dark:border-white/50 bg-black w-fit'>
+            <a target='_blank' href='https://github.com/olynsn15' className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full mx-4 font-ovo text-white dark:border-white/50 bg-black w-fit'>
                 My Other Works
                 <Image src={assets.right_arrow} alt='profile image' className='w-5'/>
             </a>
