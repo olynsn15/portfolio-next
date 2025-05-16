@@ -27,6 +27,7 @@ export default function RootLayout({
         className={`${lexend_deca.className, syne.className} antialiased leading-8 overflow-x-hidden dark:bg-dark-theme dark:text-white bg-white`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
