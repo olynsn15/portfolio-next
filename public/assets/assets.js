@@ -55,8 +55,12 @@ import github from './github.svg';
 import binus from './binus.jpeg';
 import sasc from './sasc.jpeg';
 import tfisc from './tfisc.png';
-import ada from './ada.jpeg'
-import youthmatters from './youthmatters.png'
+import ada from './ada.jpeg';
+import youthmatters from './youthmatters.png';
+import aidbuddy from './aidbuddy.png';
+import tapesync from './tapesync.png';
+import picverse from './picverse.png';
+import profile from './profile.png';
 
 export const assets = {
     user_image,
@@ -118,6 +122,10 @@ export const assets = {
     tfisc,
     ada,
     youthmatters,
+    aidbuddy,
+    tapesync,
+    picverse,
+    profile,
 };
 
 export const techStack = [
@@ -175,21 +183,21 @@ export const workData = [
     {
         title: 'AidBuddy',
         description: 'AidBuddy is a vital mobile app developed using Swift, designed to provide immediate and reliable first aid information in emergency situations. Whether dealing with a minor injury or a critical medical emergency, AidBuddy offers step-by-step guidance to help users respond quickly and effectively before professional assistance arrives.',
-        bgImage: '/work-1.png',
+        bgImage: assets.aidbuddy,
         icons: [assets.figma, assets.swift],
         link: 'https://github.com/olynsn15/AidBuddy',
     },
     {
         title: 'TapeSync',
-        description: 'TapeSync is a mobile app built with Flutter that serves as a digital video tape store, allowing customers to browse and purchase tapes, while admins manage tape data. Developed with a Node.js back-end and MySQL database, the app supports CRUD operations, secure JWT-based authentication, and features a responsive UI with data validation for a smooth user experience.',
-        bgImage: '/work-2.png',
+        description: 'TapeSync is a mobile app built with Flutter that serves as a digital video tape store, allowing customers to browse and purchase tapes, while admins manage tape data. Developed with a Node.js back-end and MySQL database, the app supports CRUD operations, secure JWT-based authentication, and features a responsive UI for a smooth user experience.',
+        bgImage: assets.tapesync,
         icons: [assets.dart, assets.flutter, assets.mysql],
         link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
     },
     {
         title: 'Picverse',
         description: 'Picverse Community is a dynamic online platform designed to empower digital artists through sharing, connection, and recognition. The website features five primary pages, initially prototyped in Figma and then developed using HTML, CSS, and JavaScript, ensuring a responsive, smooth and engaging user experience across various devices.',
-        bgImage: '/work-3.png',
+        bgImage: assets.picverse,
         icons: [assets.figma, assets.html, assets.css, assets.js],
         link: 'https://github.com/olynsn15/Picverse',
     },
@@ -199,5 +207,24 @@ export const workData = [
         bgImage: '/work-4.png',
         icons: [assets.kotlin, assets.sqlite],
         link: 'https://github.com/olynsn15/MCS-DoJo-Movie',
+    },
+]
+
+export const contactData = [
+    { 
+        icon: assets.sasc, 
+        name: 'carolyn.ardjo@gmail.com', 
+    },
+    { 
+        icon: assets.binus, 
+        name: 'Carolyn Santana', 
+    },
+    { 
+        icon: assets.binus, 
+        name: 'olynsn15', 
+    },
+    { 
+        icon: assets.tfisc, 
+        name: '@olyn.sna', 
     },
 ]

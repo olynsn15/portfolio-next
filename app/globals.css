@@ -5,6 +5,7 @@
   --color-dark-hover: #2A004A;
   --color-dark-theme: #11001F;
   --color-purple: #682BD7;
+  --color-bg-purple: #EEE7FB;
   --font-lexend-deca: 'Lexend Deca', sans-serif;
   --font-syne: 'Syne', sans-serif;
   --box-shadow-black: 4px 4px 0 0 #000;
@@ -35,6 +36,11 @@
 .grid-auto-fit-works {
   display: grid; /* Make the element a grid container */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-auto-fit-contact {
+  display: grid; /* Make the element a grid container */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 @media (min-width: 1024px) { /* Large screens and up (md breakpoint in Tailwind is 768px, lg is 1024px)*/

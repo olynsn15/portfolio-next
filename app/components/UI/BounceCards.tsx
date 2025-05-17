@@ -18,7 +18,7 @@ interface BounceCardsProps {
 
 export default function BounceCards({
   className = "",
-  images = [assets.profile_img, assets.profile_img, assets.profile_img, assets.profile_img],
+  images = [assets.picverse, assets.aidbuddy, assets.tapesync, assets.profile],
   containerWidth = 400,
   containerHeight = 600,
   animationDelay = 0.5,
@@ -88,8 +88,18 @@ export default function BounceCards({
     }
   };
 
+  const getOffsetX = (): number => {
+    const width = window.innerWidth;
+    if (width < 640) return 40;     // mobile
+    if (width < 1024) return 80;    // tablet
+    return 160;                     // desktop
+  };
+
+
   const pushSiblings = (hoveredIdx: number) => {
     if (!enableHover) return;
+
+    const offset = getOffsetX();
 
     images.forEach((_, i) => {
       const selector = `.card-${i}`;
@@ -101,12 +111,12 @@ export default function BounceCards({
         const noRotation = getNoRotationTransform(baseTransform);
         gsap.to(selector, {
           transform: noRotation,
-          duration: 0.4,
+          duration: 0.3,
           ease: "back.out(1.4)",
           overwrite: "auto",
         });
       } else {
-        const offsetX = i < hoveredIdx ? -160 : 160;
+        const offsetX = i < hoveredIdx ? -offset : offset;
         const pushedTransform = getPushedTransform(baseTransform, offsetX);
 
         const distance = Math.abs(hoveredIdx - i);
@@ -114,7 +124,7 @@ export default function BounceCards({
 
         gsap.to(selector, {
           transform: pushedTransform,
-          duration: 0.4,
+          duration: 0.3,
           ease: "back.out(1.4)",
           delay,
           overwrite: "auto",
@@ -122,6 +132,7 @@ export default function BounceCards({
       }
     });
   };
+
 
   const resetSiblings = () => {
     if (!enableHover) return;
@@ -152,7 +163,7 @@ export default function BounceCards({
       {images.map((src, idx) => (
         <div
           key={idx}
-          className={`card card-${idx} absolute w-[50%] aspect-[3/4] border-8 border-white rounded-[30px] overflow-hidden`}
+          className={`card card-${idx} absolute w-[35%] md:w-[50%] aspect-[3/4] border-8 border-white rounded-[30px] overflow-hidden`}
           style={{
             boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
             transform: transformStyles[idx] || "none",

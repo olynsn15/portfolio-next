@@ -19,7 +19,7 @@ const Experiences = () => {
 
         <motion.div className='grid grid-auto-fit-experience gap-6 my-10' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.9 }}>
           {experienceData.map(({ icon, title, subtitle}, index) => (
-            <motion.div whileHover={{ scale: 1.05 }} key={index} className='border border-gray-400 rounded-lg px-8 py-8 hover-shadow cursor-pointer hover:bg-light-hover hover:-translate-y-1 duration-500 dark:hover:bg-dark-hover dark:hover:shadow-white'>
+            <motion.div whileHover={{ scale: 1.05 }} key={index} className='border border-gray-400 rounded-lg px-8 py-8 hover-shadow cursor-pointer hover:bg-light-hover hover:-translate-y-1 duration-500 dark:hover:bg-dark-hover dark:hover:shadow-white items-center'>
               <div className='flex items-center gap-4'>
                 <Image src={icon} alt='service icon' className='w-15 h-auto rounded-xl' />
                 <div>
