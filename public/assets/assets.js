@@ -61,6 +61,9 @@ import aidbuddy from './aidbuddy.png';
 import tapesync from './tapesync.png';
 import picverse from './picverse.png';
 import profile from './profile.png';
+import linkedin_purple from './linkedin_purple.svg';
+import github_purple from './github_purple.svg';
+import instagram_purple from './instagram_purple.svg';
 
 export const assets = {
     user_image,
@@ -126,6 +129,9 @@ export const assets = {
     tapesync,
     picverse,
     profile,
+    github_purple,
+    linkedin_purple,
+    instagram_purple,
 };
 
 export const techStack = [
@@ -212,19 +218,15 @@ export const workData = [
 
 export const contactData = [
     { 
-        icon: assets.sasc, 
-        name: 'carolyn.ardjo@gmail.com', 
-    },
-    { 
-        icon: assets.binus, 
+        icon: assets.linkedin_purple, 
         name: 'Carolyn Santana', 
     },
     { 
-        icon: assets.binus, 
+        icon: assets.github_purple, 
         name: 'olynsn15', 
     },
     { 
-        icon: assets.tfisc, 
+        icon: assets.instagram_purple, 
         name: '@olyn.sna', 
     },
 ]
