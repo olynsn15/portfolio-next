@@ -10,7 +10,7 @@ const Header = () => {
         <motion.h1 initial={{y: -30, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.5, delay: 0.3}} className='flex gap-2 text-5xl md:text-7xl mb-3 font-syne font-bold text-purple'>
             Hi there! Olyn here!
         </motion.h1>
-        <motion.h1 initial={{y: -30, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.8, delay: 0.5}} className='text-xl sm:text-3xl lg:text-[26px] font-lexend-deca font-extralight'>
+        <motion.h1 initial={{y: -30, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.8, delay: 0.5}} className='text-xl sm:text-3xl lg:text-[26px] font-lexend-deca font-extralight text-dark-purple'>
             Feel free to look around! I got some cool stuff to show you!
         </motion.h1>
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>

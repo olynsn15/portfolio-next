@@ -56,7 +56,7 @@ const About = () => {
             <motion.h4 className='text-center mb-2 text-lg font-syne text-purple font-medium' initial={{opacity: 0, y: -20}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.3}}>
                 ✦ Introduction ✦
             </motion.h4>
-            <motion.h2 className='text-center text-5xl font-syne font-medium' initial={{opacity: 0, y: -20}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.5}}>
+            <motion.h2 className='text-center text-5xl font-syne font-medium text-dark-purple' initial={{opacity: 0, y: -20}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.5}}>
                 About Me
             </motion.h2>
             <motion.div className='flex flex-col lg:flex-row flex-wrap items-center my-12 lg:gap-30 gap-5' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.8}}>
