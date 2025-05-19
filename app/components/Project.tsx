@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 const Project = () => {
   return (
-    <motion.div id='project' className='w-full px-[12%] py-15 scroll-mt-20 items-center' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}}>
+    <motion.div id='project' className='w-full px-[12%] py-25 scroll-mt-20 items-center' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}}>
         <motion.h4 className='text-center mb-2 text-lg font-syne text-purple font-medium' initial={{y: -20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.5, delay: 0.5}}>
             ✦ My Portfolio ✦
         </motion.h4>
@@ -51,12 +51,12 @@ const Project = () => {
             ))}
         </div>
 
-        <div className='flex justify-center mt-10 font-lexend-deca'>
+        <motion.div initial={{y: 30, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.6, delay: 1.2}} className='flex justify-center mt-10 font-lexend-deca'>
             <a target='_blank' href='https://github.com/olynsn15' className='flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full mx-4 font-ovo text-white dark:border-white/50 bg-black w-fit'>
                 My Other Works
                 <Image src={assets.right_arrow_white} alt='profile image' className='w-5'/>
             </a>
-        </div>
+        </motion.div>
 
 
         {/* <motion.div className='grid grid-auto-fit-works my-10 gap-5 dark:text-black' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.9}}>

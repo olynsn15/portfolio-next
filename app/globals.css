@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-light-hover: #FCF4FF;
+  --color-light-hover: #F7E0FF;
   --color-dark-hover: #2A004A;
   --color-dark-theme: #11001F;
   --color-purple: #682BD7;

@@ -1,12 +1,12 @@
 'use client'
-import { experienceData } from '@/public/assets/assets'
+import { assets, experienceData } from '@/public/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react";
 
 const Experiences = () => {
   return (
-    <motion.div id='experiences' className='w-full px-[10%] py-15 scroll-mt-20' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}}>
+    <motion.div id='experiences' className='w-full px-[10%] py-25 scroll-mt-20' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}}>
         <motion.h4 className='text-center mb-2 text-lg font-syne text-purple font-medium' initial={{y: -20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.5, delay: 0.5}}>
             ✦ Experiences ✦
         </motion.h4>
@@ -30,6 +30,14 @@ const Experiences = () => {
             </motion.div>
           ))}
         </motion.div>
+
+        <motion.div initial={{y: 30, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.6, delay: 1.2}} className='flex justify-center mt-10 font-lexend-deca'>
+          <a target='_blank' href='/sample-resume.pdf' rel="noopener noreferrer" className='flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full mx-4 font-ovo text-white dark:border-white/50 bg-black w-fit'>
+            Check out my CV!
+            <Image src={assets.right_arrow_white} alt='profile image' className='w-5'/>
+          </a>
+        </motion.div>
+
     </motion.div>
   )
 }
