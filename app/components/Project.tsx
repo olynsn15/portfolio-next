@@ -24,6 +24,13 @@ const Project = () => {
                         <Image src={project.bgImage} alt={project.title} fill className="object-cover"/>
                     </div>
                     <h2 className="text-black text-2xl font-syne font-semibold mb-2">{project.title}</h2>
+                    <div className='flex items-center flex-wrap mb-2'>
+                        {project.details.map((detail, index) => (
+                            <div key={index} className="border border-gray-400 rounded-full bg-white w-fit md:px-5 px-2 py-1 mr-2 flex justify-center items-center mb-2 md:text-sm text-xs">
+                                {detail}
+                            </div>
+                        ))}
+                    </div>
                     <p className="text-gray-600 text-sm text-justify font-lexend-deca">{project.description}</p>
                     <div className="flex items-center justify-between mt-7">
                         <div className='flex items-center'>

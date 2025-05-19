@@ -188,6 +188,7 @@ export const experienceData = [
 export const workData = [
     {
         title: 'AidBuddy',
+        details: ['Group Project', 'Application', '2023'],
         description: 'AidBuddy is a vital mobile app developed using Swift, designed to provide immediate and reliable first aid information in emergency situations. Whether dealing with a minor injury or a critical medical emergency, AidBuddy offers step-by-step guidance to help users respond quickly and effectively before professional assistance arrives.',
         bgImage: assets.aidbuddy,
         icons: [assets.figma, assets.swift],
@@ -195,6 +196,7 @@ export const workData = [
     },
     {
         title: 'TapeSync',
+        details: ['Group Project', 'Application', '2024'],
         description: 'TapeSync is a mobile app built with Flutter that serves as a digital video tape store, allowing customers to browse and purchase tapes, while admins manage tape data. Developed with a Node.js back-end and MySQL database, the app supports CRUD operations, secure JWT-based authentication, and features a responsive UI for a smooth user experience.',
         bgImage: assets.tapesync,
         icons: [assets.dart, assets.flutter, assets.mysql],
@@ -202,6 +204,7 @@ export const workData = [
     },
     {
         title: 'Picverse',
+        details: ['Individual Project', 'Website', '2025'],
         description: 'Picverse Community is a dynamic online platform designed to empower digital artists through sharing, connection, and recognition. The website features five primary pages, initially prototyped in Figma and then developed using HTML, CSS, and JavaScript, ensuring a responsive, smooth and engaging user experience across various devices.',
         bgImage: assets.picverse,
         icons: [assets.figma, assets.html, assets.css, assets.js],
@@ -209,6 +212,7 @@ export const workData = [
     },
     {
         title: 'DoJo Movies',
+        details: ['Group Project', 'Application', '2025'],
         description: 'DoJo Movie is an Android mobile app that lets users browse and purchase high-quality films while also locating nearby DoJo Movie stores via Google Maps. Built with SQLite for data storage, the app features user authentication, OTP verification, film browsing with data fetched via Volley, and a Google Maps-integrated home page.',
         bgImage: '/work-4.png',
         icons: [assets.kotlin, assets.sqlite],
@@ -220,13 +224,16 @@ export const contactData = [
     { 
         icon: assets.linkedin_purple, 
         name: 'Carolyn Santana', 
+        link: 'https://www.linkedin.com/in/carolyn-santana15/',
     },
     { 
         icon: assets.github_purple, 
         name: 'olynsn15', 
+        link: 'https://github.com/olynsn15',
     },
     { 
         icon: assets.instagram_purple, 
         name: '@olyn.sna', 
+        link: 'https://www.instagram.com/olyn.sna',
     },
 ]
