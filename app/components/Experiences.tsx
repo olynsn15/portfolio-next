@@ -14,7 +14,7 @@ const Experiences = () => {
             Roles & Activities
         </motion.h2>
         <motion.p className='text-center max-w-3xl mx-auto mt-5 mb-12 font-lexend-deca' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.5, delay: 0.7}}>
-            A comprehensive glimpse into the various responsibilities and exciting ventures I've undertaken
+            A comprehensive glimpse into the various responsibilities and exciting ventures I have undertaken
         </motion.p>
 
         <motion.div className='grid grid-auto-fit-experience gap-6 my-10' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.9 }}>
