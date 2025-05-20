@@ -17,8 +17,6 @@ const About = () => {
     useEffect(() => {
         const handleResize = () => {
             const width = window.innerWidth
-
-            // Update container width
             if (width < 640) {
                 setContainerWidth(300)
                 setTransformStyles([
@@ -45,7 +43,6 @@ const About = () => {
                 ])
             }
         }
-
         handleResize()
         window.addEventListener("resize", handleResize)
         return () => window.removeEventListener("resize", handleResize)
@@ -53,13 +50,14 @@ const About = () => {
 
     return (
         <motion.div id='about' className='w-full px-[10%] py-15 scroll-mt-20' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}}>
-            <motion.h4 className='text-center mb-2 text-lg font-syne text-purple font-medium' initial={{opacity: 0, y: -20}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.3}}>
+            <motion.h4 className='text-center mb-2 text-lg font-syne text-purple dark:text-darker-purple font-medium' initial={{opacity: 0, y: -20}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.3}}>
                 ✦ Introduction ✦
             </motion.h4>
-            <motion.h2 className='text-center text-5xl font-syne font-medium text-dark-purple' initial={{opacity: 0, y: -20}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.5}}>
+            <motion.h2 className='text-center text-5xl font-syne font-medium text-dark-purple dark:text-light-purple' initial={{opacity: 0, y: -20}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.5}}>
                 About Me
             </motion.h2>
-            <motion.div className='flex flex-col lg:flex-row flex-wrap items-center my-12 lg:gap-30 gap-5' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.8}}>
+
+            <motion.div className='flex flex-col lg:flex-row flex-wrap items-center my-12 lg:gap-30 gap-20 justify-center' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.8}}>
                 <motion.div initial={{opacity: 0, scale: 0.9}} whileInView={{opacity: 1, scale: 1}} transition={{duration: 0.6}}>
                     <BounceCards
                         className="custom-bounceCards"
@@ -72,9 +70,10 @@ const About = () => {
                         enableHover={true}
                     />
                 </motion.div>
-                <motion.div className='flex-1' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.8}}>
+                <motion.div className='flex-1 max-w-2xl' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.8}}>
                     <p className='mb-10 font-lexend-deca text-base sm:text-lg leading-relaxed text-justify font-extralight'>
-                        I’m an enthusiastic Mobile Application and Technology undergraduate, passionate about learning, collaboration, and growth. I enjoy contributing to meaningful projects, mentoring, and expanding my skills in tech and design.
+                        I’m an enthusiastic Mobile Application and Technology undergraduate, passionate about learning, collaboration, and growth. 
+                        I enjoy contributing to meaningful projects, mentoring, and expanding my skills in tech and design.
                     </p>
 
                     <motion.h4 className='my-6 text-gray-600 font-syne dark:text-white/80' initial={{y: 20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.5, delay: 1.3}}>
@@ -90,6 +89,7 @@ const About = () => {
                     </motion.ul>
                 </motion.div>
             </motion.div>
+
         </motion.div>
     )
 }

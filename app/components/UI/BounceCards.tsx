@@ -18,17 +18,17 @@ interface BounceCardsProps {
 
 export default function BounceCards({
   className = "",
-  images = [assets.picverse, assets.aidbuddy, assets.tapesync, assets.profile],
+  images = [assets.study, assets.codes, assets.design, assets.profile],
   containerWidth = 400,
   containerHeight = 600,
   animationDelay = 0.5,
   animationStagger = 0.06,
   easeType = "elastic.out(1, 0.8)",
   transformStyles = [
-    "rotate(7deg) translateX(-160px)",  // Adjusted for 4 cards
-    "rotate(3deg) translateX(-50px)",   // Adjusted for 4 cards
-    "rotate(-3deg) translateX(50px)",  // Adjusted for 4 cards
-    "rotate(-7deg) translateX(160px)", // Adjusted for 4 cards
+    "rotate(7deg) translateX(-160px)",  
+    "rotate(3deg) translateX(-50px)", 
+    "rotate(-3deg) translateX(50px)",  
+    "rotate(-7deg) translateX(160px)",
   ],
   enableHover = false,
 }: BounceCardsProps) {
@@ -90,9 +90,9 @@ export default function BounceCards({
 
   const getOffsetX = (): number => {
     const width = window.innerWidth;
-    if (width < 640) return 40;     // mobile
-    if (width < 1024) return 80;    // tablet
-    return 160;                     // desktop
+    if (width < 640) return 40;     
+    if (width < 1024) return 80;    
+    return 160;                     
   };
 
 
