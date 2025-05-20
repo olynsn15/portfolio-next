@@ -15,7 +15,7 @@ const Contact = () => {
             Connect with me!
         </motion.h2>
         <motion.p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-lexend-deca' initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.5, delay: 0.7}}>
-            Even though I am not looking for any opportunities at the moment, you're always welcome to say hello – let's connect!
+            Even though I am not looking for any opportunities at the moment, you are always welcome to say hello!
         </motion.p>
         <motion.div className='grid grid-auto-fit-contact justify-center gap-4 my-10' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.9 }}>
           {contactData.map(({ icon, name, link }, index) => (
