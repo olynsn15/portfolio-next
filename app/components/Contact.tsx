@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { motion } from "motion/react"
-import { assets, contactData } from '@/public/assets/assets'
+import { contactData } from '@/public/assets/assets'
 import Image from 'next/image'
 
 const Contact = () => {
