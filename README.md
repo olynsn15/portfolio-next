@@ -22,14 +22,13 @@ The portfolio consists of the following main sections:
 - **Icons**: Various sources 
 - **Images**: [Devicon](https://devicon.dev/)
 - **Some components**: [ReactBits](https://www.reactbits.dev/)
-<br>
 
 ## ⚙️ Tech Stack
 ![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-%23000000.svg?logo=vercel&logoColor=white)
-<br>
+<br><br>
 
 ## 📁 Folder Structure
 ```
@@ -64,6 +63,7 @@ The portfolio consists of the following main sections:
 ├── tailwind.config.js
 ├── .gitignore
 ```
+<br>
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
