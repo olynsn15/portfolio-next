@@ -5,7 +5,8 @@ This is a personal portfolio website built with [**Next.js**](https://nextjs.org
 
 ## 🚀 Live Website: 
 [Checkout the live web!](https://olynsn15.vercel.app)
-<br>
+<br><br>
+
 
 ## 🧩 Portfolio Sections
 The portfolio consists of the following main sections:
