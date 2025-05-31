@@ -1,3 +1,69 @@
+# 🌐 Personal Portfolio Website
+
+This is a personal portfolio website built with [**Next.js**](https://nextjs.org/), styled using [**Tailwind CSS**](https://tailwindcss.com/), written in **TypeScript**, and structured with reusable components—some of which are inspired by **ReactBits** UI patterns.
+<br>
+
+## 🚀 Live Website: 
+[Checkout the live web!](https://olynsn15.vercel.app)
+<br>
+
+## 🧩 Portfolio Sections
+The portfolio consists of the following main sections:
+- **Header** — introduction & navigation  
+- **About** — brief biography  
+- **Experiences** — timeline of experiences  
+- **Projects** — highlight of selected works  
+- **Contact Me** — contact form or details  
+<br>
+
+## 🗂️ Assets Used
+- **Fonts**: Lexend Deca and Syne via [Google Fonts](https://fonts.google.com)  
+- **Icons**: Various sources 
+- **Images**: [Devicon](https://devicon.dev/)
+- **Some components**: [ReactBits](https://www.reactbits.dev/)
+<br>
+
+## ⚙️ Tech Stack
+![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff)
+![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-%23000000.svg?logo=vercel&logoColor=white)
+<br>
+
+## 📁 Folder Structure
+```
+├── app/
+│ ├── components/
+│ │ ├── NavFoot/
+│ │ │ ├── Footer.tsx
+│ │ │ └── Navbar.tsx
+│ │ └── UI/
+│ │ ├── About.tsx
+│ │ ├── BounceCards.tsx
+│ │ ├── Contact.tsx
+│ │ ├── Experiences.tsx
+│ │ ├── Header.tsx
+│ │ └── Project.tsx
+│ ├── globals.css
+│ ├── layout.tsx
+│ └── page.tsx
+│
+├── public/
+│ ├── assets/
+│ │ ├── CV-Olyn.pdf
+│ │ └── tfisc.png
+│ └── favicon.ico
+│
+├── README.md
+├── TODO.md
+├── next.config.js
+├── tsconfig.json
+├── package.json
+├── postcss.config.mjs
+├── tailwind.config.js
+├── .gitignore
+```
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
