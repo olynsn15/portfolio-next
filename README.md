@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio Website
 
-This is a personal portfolio website built with [**Next.js**](https://nextjs.org/), styled using [**Tailwind CSS**](https://tailwindcss.com/), written in **TypeScript**, and structured with reusable components—some of which are inspired by **ReactBits** UI patterns.
+This is a my very own personal portfolio website built with [**Next.js**](https://nextjs.org/), styled using [**Tailwind CSS**](https://tailwindcss.com/), written in **TypeScript**, and structured with reusable components—some of which are inspired by **ReactBits** UI patterns.
 <br>
 
 ## 🚀 Live Website: 
