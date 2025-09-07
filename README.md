@@ -1,5 +1,6 @@
 # Olyn's Portfolio Website 💫✨
 ### Personal Project
+
 This **personal portfolio website** was a **self-initiated project** that highlights **my journey, project experiences, and aspirations** in a clean and interactive format. Developed independently in 2025, it reflects my growth as a developer while serving as a central platform to showcase my works and progress to potential collaborators, mentors, and employers.
 <br><br>
 
