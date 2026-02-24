@@ -1,51 +1,51 @@
 @import "tailwindcss";
 
 @theme {
-  --color-light-hover: #F7E0FF;
-  --color-dark-hover: #481E96;
-  --color-dark-theme: #15092B;
-  --color-purple: #682BD7;
-  --color-bg-purple: #DDCFF7;
-  --color-dark-purple: #3E1A81;
-  --color-light-purple: #DDCFF7;
-  --color-darker-purple: #CDB8F3;
-  --font-lexend-deca: 'Lexend Deca', sans-serif;
-  --font-syne: 'Syne', sans-serif;
+  --color-light-hover: #f7e0ff;
+  --color-dark-hover: #481e96;
+  --color-dark-theme: #15092b;
+  --color-purple: #682bd7;
+  --color-bg-purple: #ddcff7;
+  --color-dark-purple: #3e1a81;
+  --color-light-purple: #ddcff7;
+  --color-darker-purple: #cdb8f3;
+  --font-lexend-deca: "Lexend Deca", sans-serif;
+  --font-syne: "Syne", sans-serif;
   --box-shadow-black: 4px 4px 0 0 #000;
   --box-shadow-white: 4px 4px 0 0 #fff;
 }
 
-.hover-shadow:hover{
+.hover-shadow:hover {
   box-shadow: var(--box-shadow-black);
 }
 
 @media (prefers-color-scheme: dark) {
   .hover-shadow:hover {
-    box-shadow: var(--box-shadow-white); 
+    box-shadow: var(--box-shadow-white);
   }
 }
 
-.hover-shadow-white:hover{
+.hover-shadow-white:hover {
   box-shadow: var(--box-shadow-white);
 }
 
 .grid-auto-fit-experience {
-  display: grid; 
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .grid-auto-fit-works {
-  display: grid; 
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .grid-auto-fit-contact {
-  display: grid; 
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
-@media (min-width: 1024px) { 
+@media (min-width: 1024px) {
   .grid-auto-fit-works {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
   }
 }
